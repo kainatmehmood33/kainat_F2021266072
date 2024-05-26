@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kallyas - Business Innovation</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin: 0 1em;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 5em 0;
+        }
+
+        .hero .btn {
+            padding: 1em 2em;
+            margin: 1em;
+            background: #f00;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero .btn.secondary {
+            background: #000;
+        }
+
+        .services, .about, .portfolio, .clients, .contact, .footer {
+            padding: 3em 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .services h2 span, .about h2, .clients h2, .contact h2 {
+            color: #f00;
+        }
+
+        .services-grid, .portfolio-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 1em;
+        }
+
+        .service-box {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 2em;
+            margin: 1em;
+        }
+
+        .portfolio-grid {
+            flex-wrap: wrap;
+        }
+
+        .portfolio-grid img {
+            width: calc(22% - 0.5em); 
+            height: auto;
+            margin: 0.5em;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .contact-form .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form .form-group input, .contact-form .form-group textarea {
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form .btn {
+            background: #f00;
+            color: #fff;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .footer-nav ul li {
+            margin: 0 1em;
+        }
+
+        .footer-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header .container, .services-grid, .portfolio-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul li {
+                margin: 0.5em 0;
+            }
+
+            .portfolio-grid img {
+                width: calc(50% - 1em);
+            }
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 45%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 2em 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-grid img {
+                width: calc(50% - 1em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Kallyas.</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Helping Business And Companies Innovate Transform And Lead</h2>
+                <p>Learn explore and understand more about business, technology, and innovation.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Learn More</a>
+                    <a href="#" class="btn secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Best services for <span>Visual Perfection</span></h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>Content Concept & Strategy</h3>
+                    <p>Gain more organic growth with our unique content strategies.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Design & Develop</h3>
+                    <p>We design and develop beautiful and functional websites.</p>
+                </div>
+                <div class="service-box">
+                    <h3>SEO & Marketing solutions</h3>
+                    <p>Reach your audience effectively with our marketing strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Detailed business plans & the most effective results</h2>
+            <p>We focus on delivering measurable results through innovative solutions and strategic thinking.</p>
+            <a href="#" class="btn">Start Now</a>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>We provide high quality and cost effective services.</h2>
+            <div class="portfolio-grid">
+                <img src="https://images.pexels.com/photos/20232363/pexels-photo-20232363/free-photo-of-woman-with-statistics-in-an-office.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/5876546/pexels-photo-5876546.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/6672291/pexels-photo-6672291.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/6593329/pexels-photo-6593329.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/4558710/pexels-photo-4558710.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/8842922/pexels-photo-8842922.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/4792732/pexels-photo-4792732.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                <img src="https://images.pexels.com/photos/4792733/pexels-photo-4792733.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project Image">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <h2>We are trusted by more than 3600+ clients.</h2>
+            <div class="clients-content">
+                <div class="clients-text">
+                    <p>Join our happy clients and experience our exceptional services.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Fkd9TWUtFm0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Want to have a professional project? Let’s talk about it.</h2>
+            <form action="#" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Describe your project</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <h1>Kallyas.</h1>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
