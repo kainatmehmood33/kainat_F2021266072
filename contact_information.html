@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Personal Website</title>
+    <title>Contact Information</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .intro-section {
+        .contact-section {
             padding: 60px 0;
         }
         .nav-link {
             color: #fff !important;
-        }
-        .background {
-            background-color: #661766; /* Change this color to your preference */
-            color: white;
         }
     </style>
 </head>
@@ -22,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Website</a>
+            <a class="navbar-brand" href="index.html">My Website</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,7 +34,7 @@
                         <a class="nav-link" href="favorite_cities.html">Favorite Cities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="favorite_tourist_spots.html"">Favorite Tourist Spots</a>
+                        <a class="nav-link" href="favorite_tourist_spots.html">Favorite Tourist Spots</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact_information.html">Contact Information</a>
@@ -48,40 +44,34 @@
         </div>
     </nav>
 
-
-    <header class="background text-white text-center py-5 mb-4">
-        <div class="container">
-            <br>
-            <br>
-            <h1 class="fw-light">Welcome to My Personal Website</h1>
-            <p class="lead">Discover my world, my passions, and my journey.</p>
-        </div>
-    </header>
-
-    <section class="intro-section">
+    <section class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-12 text-center mb-5">
                     <br>
-                    <h2>About Me</h2>
-                    <br>
-                    <p>Hi, I'm Kainat Mehmood, a passionate individual with a love for painting, baking, and cycling. I'm a creative thinker, a dedicated baker, and an aspiring data analyst.</p>
+                
+                    <h1>Contact Information</h1>
                 </div>
-                <div class="col-lg-6">
-                    <br>
-                    <h3>Skills and Expertise</h3>
-                    <ul>
-                        <li><strong>Skills:</strong> Creative, Baker, Data Analyst</li>
-                        <li><strong>Expertise:</strong> Expert at Paintings</li>
-                        <li><strong>Profession:</strong> Data Science</li>
-                        <li><strong>Ambitions:</strong> To become a leading data scientist and continue exploring my passions.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
-                    <h3>Explore More</h3>
-                    <p>Learn more about my favorite personalities, cities I've visited, and my top tourist spots by navigating through the website.</p>
+                <div class="col-lg-8 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="contact" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

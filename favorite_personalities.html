@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Personal Website</title>
+    <title>Favorite Personalities</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .intro-section {
+        .personality-section {
             padding: 60px 0;
+        }
+        .personality-card img {
+            height: 300px;
+            object-fit: cover;
         }
         .nav-link {
             color: #fff !important;
-        }
-        .background {
-            background-color: #661766; /* Change this color to your preference */
-            color: white;
         }
     </style>
 </head>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="favorite_cities.html">Favorite Cities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="favorite_tourist_spots.html"">Favorite Tourist Spots</a>
+                        <a class="nav-link" href="favorite_tourist_spots.html">Favorite Tourist Spots</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact_information.html">Contact Information</a>
@@ -49,43 +49,39 @@
     </nav>
 
 
-    <header class="background text-white text-center py-5 mb-4">
-        <div class="container">
-            <br>
-            <br>
-            <h1 class="fw-light">Welcome to My Personal Website</h1>
-            <p class="lead">Discover my world, my passions, and my journey.</p>
-        </div>
-    </header>
-
-    <section class="intro-section">
+    <section class="personality-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-12 text-center mb-5">
                     <br>
-                    <h2>About Me</h2>
                     <br>
-                    <p>Hi, I'm Kainat Mehmood, a passionate individual with a love for painting, baking, and cycling. I'm a creative thinker, a dedicated baker, and an aspiring data analyst.</p>
+                    <h1>Favorite Personalities</h1>
+                    <br>
+                    
                 </div>
-                <div class="col-lg-6">
-                    <br>
-                    <h3>Skills and Expertise</h3>
-                    <ul>
-                        <li><strong>Skills:</strong> Creative, Baker, Data Analyst</li>
-                        <li><strong>Expertise:</strong> Expert at Paintings</li>
-                        <li><strong>Profession:</strong> Data Science</li>
-                        <li><strong>Ambitions:</strong> To become a leading data scientist and continue exploring my passions.</li>
-                    </ul>
+                <div class="col-lg-6 mb-4">
+                    <div class="card personality-card">
+                        <img src="https://images.unsplash.com/photo-1585011650347-c59dbef5a823?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWxvbiUyMG11c2t8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Elon Musk">
+                        <div class="card-body">
+                            <h5 class="card-title">Elon Musk</h5>
+                            <p class="card-text">Elon Musk is an entrepreneur and business magnate. He is the founder, CEO, and chief engineer of SpaceX; early investor, CEO, and product architect of Tesla, Inc.; owner and CEO of Twitter; founder of The Boring Company; co-founder of Neuralink and OpenAI.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
-                    <h3>Explore More</h3>
-                    <p>Learn more about my favorite personalities, cities I've visited, and my top tourist spots by navigating through the website.</p>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card personality-card">
+                        <img src="https://images.unsplash.com/photo-1493841160601-33a4807cb6de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VmluY2VudCUyMHZhbiUyMEdvZ2glMjBwYWludGluZ3N8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Vincent van Gogh">
+                        <div class="card-body">
+                            <h5 class="card-title">Vincent van Gogh</h5>
+                            <p class="card-text">Vincent van Gogh was a Dutch post-impressionist painter who is among the most famous and influential figures in Western art. He created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
